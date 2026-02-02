@@ -5,6 +5,8 @@ import Content from "./components/homework/Content";
 import { FooterCompo } from "./components/Class/FooterCompo";
 import MapDemo6 from "./components/homework/MapDemo6";
 import MapDemo7 from "./components/homework/MapDemo7";
+import MapDemo8 from "./components/homework/MapDemo8";
+import MapDemo9 from "./components/homework/MapDemo9";
 // import MapDemo1 from "./components/Class/MapDemo1";
 // import MapDemo2 from "./components/Class/MapDemo2";
 // import MapDemo3 from "./components/Class/MapDemo3";
@@ -24,6 +26,8 @@ function App() {
         <MapDemo5 /> */}
         <MapDemo6 />
         <MapDemo7 />
+        <MapDemo8/>
+        <MapDemo9/>
 
         <FooterCompo />
       </div>
