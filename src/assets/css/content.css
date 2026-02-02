@@ -1,0 +1,67 @@
+.contentMain {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 60px;
+  color: #e5e7eb;
+}
+
+/* Image */
+.contentImage img {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+/* Text Container */
+.contentText {
+  max-width: 700px;
+}
+
+/* Headings */
+.contentText h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #facc15;
+}
+
+.contentText h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #94a3b8;
+}
+
+/* Paragraph */
+.contentText p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #cbd5f5;
+}
+
+/* Skills */
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  padding: 8px 0 8px 20px;
+  position: relative;
+}
+
+.skills li::before {
+  content: "⚡";
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contentMain {
+    flex-direction: column;
+    text-align: center;
+  }
+}
