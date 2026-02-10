@@ -11,6 +11,11 @@ import Watch from "./components/Class/Watch";
 import Movies from "./components/Class/Movies";
 import Teams from "./components/homework/Teams";
 import TeamDetails from "./components/homework/TeamDetails";
+import Employee from "./components/Class/Employee";
+import Student from "./components/Class/Student";
+import Product from "./components/homework/Product";
+import WatchData from "./components/homework/WatchData";
+import InputDemo from "./components/homework/InputDemo";
 
 function App() {
   return (
@@ -26,6 +31,11 @@ function App() {
         <Route path="/team" element={<Teams />}></Route>
         <Route path="/teamdetails/:teamname" element={<TeamDetails />}></Route>
         <Route path="/aboutus" element={<AboutUs />}></Route>
+        <Route path="/employee" element={<Employee />}></Route>
+        <Route path="/student" element={<Student />}></Route>
+        <Route path="/product" element={<Product />}></Route>
+        <Route path="/watchdata" element={<WatchData />}></Route>
+        <Route path="/inputdemo" element={<InputDemo />} />
         <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>
     </div>
