@@ -1,4 +1,3 @@
-import React from "react";
 import "./assets/css/app.css";
 import Navbar from "./components/Class/Navbar";
 import { Route, Routes } from "react-router-dom";
@@ -15,7 +14,13 @@ import Employee from "./components/Class/Employee";
 import Student from "./components/Class/Student";
 import Product from "./components/homework/Product";
 import WatchData from "./components/homework/WatchData";
-import InputDemo from "./components/homework/InputDemo";
+import InputDemo from "./components/homework/Input HW/InputDemo";
+import DropDown from "./components/homework/DropDown";
+import InputHomeWork from "./components/homework/Input HW/InputHomeWork";
+import FormHW1 from "./components/homework/Form HW/FormHW1";
+import FormDemo2 from "./components/homework/Form HW/FormDemo2";
+import FormDemo3 from "./components/homework/Form HW/FormDemo3";
+import FormMain from "./components/homework/Form HW/FormMain";
 
 function App() {
   return (
@@ -24,18 +29,22 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/resume" element={<Resume />}></Route>
         <Route path="/project" element={<Project />}></Route>
         <Route path="/movie" element={<Movies />}></Route>
         <Route path="/watch/:name" element={<Watch />}></Route>
         <Route path="/team" element={<Teams />}></Route>
         <Route path="/teamdetails/:teamname" element={<TeamDetails />}></Route>
-        <Route path="/aboutus" element={<AboutUs />}></Route>
         <Route path="/employee" element={<Employee />}></Route>
         <Route path="/student" element={<Student />}></Route>
         <Route path="/product" element={<Product />}></Route>
         <Route path="/watchdata" element={<WatchData />}></Route>
         <Route path="/inputdemo" element={<InputDemo />} />
+        <Route path="/inputhomework" element={<InputHomeWork />}></Route>
+        <Route path="/dropdown" element={<DropDown />}></Route>
+        <Route path="/forms" element={<FormMain />}></Route>
+        <Route path="/formhw1" element={<FormHW1 />}></Route>
+        <Route path="/formdemo2" element={<FormDemo2 />}></Route>
+        <Route path="/formdemo3" element={<FormDemo3 />}></Route>
         <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>
     </div>
