@@ -21,6 +21,9 @@ import FormHW1 from "./components/homework/Form HW/FormHW1";
 import FormDemo2 from "./components/homework/Form HW/FormDemo2";
 import FormDemo3 from "./components/homework/Form HW/FormDemo3";
 import FormMain from "./components/homework/Form HW/FormMain";
+import FormClassDemo2 from "./components/Class/Form/FormClassDemo2";
+import ProductFormValidator from "./components/homework/Form HW/ProductFormValidator";
+import EmployeeFormValidation from "./components/homework/Form HW/EmployeeFormValidation";
 
 function App() {
   return (
@@ -44,6 +47,9 @@ function App() {
         <Route path="/forms" element={<FormMain />}></Route>
         <Route path="/formhw1" element={<FormHW1 />}></Route>
         <Route path="/formdemo2" element={<FormDemo2 />}></Route>
+        <Route path="/formclassdemo2" element={<FormClassDemo2 />}></Route>
+        <Route path="/productform" element={<ProductFormValidator/>}></Route>
+        <Route path="/employeeform" element={<EmployeeFormValidation/>}></Route>
         <Route path="/formdemo3" element={<FormDemo3 />}></Route>
         <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>

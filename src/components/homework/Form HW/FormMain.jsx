@@ -15,6 +15,9 @@ function FormMain() {
       <Link to="/formhw1">FormHW1</Link>
       <Link to="/formdemo2">Form Demo 2</Link>
       <Link to="/formdemo3">Form Demo 3</Link>
+      <Link to="/formclassdemo2">Form Validation Class Demo 2</Link>
+      <Link to="/productform">Product Form Validation</Link>
+      <Link to="/employeeform">Employee Form Validation</Link>
     </div>
   );
 }
