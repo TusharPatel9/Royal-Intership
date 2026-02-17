@@ -18,6 +18,7 @@ function FormMain() {
       <Link to="/formclassdemo2">Form Validation Class Demo 2</Link>
       <Link to="/productform">Product Form Validation</Link>
       <Link to="/employeeform">Employee Form Validation</Link>
+      <Link to="/passwordvalidation">Password Validation</Link>
     </div>
   );
 }

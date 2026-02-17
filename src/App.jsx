@@ -24,6 +24,7 @@ import FormMain from "./components/homework/Form HW/FormMain";
 import FormClassDemo2 from "./components/Class/Form/FormClassDemo2";
 import ProductFormValidator from "./components/homework/Form HW/ProductFormValidator";
 import EmployeeFormValidation from "./components/homework/Form HW/EmployeeFormValidation";
+import PasswordFormValidator from "./components/homework/Form HW/PasswordFormValidator";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path="/productform" element={<ProductFormValidator/>}></Route>
         <Route path="/employeeform" element={<EmployeeFormValidation/>}></Route>
         <Route path="/formdemo3" element={<FormDemo3 />}></Route>
+        <Route path="/passwordvalidation" element={<PasswordFormValidator />}></Route>
         <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>
     </div>
