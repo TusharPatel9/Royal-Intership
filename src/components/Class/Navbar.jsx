@@ -82,6 +82,11 @@ function Navbar() {
                 Forms
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/apis">
+                Apis
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -34,9 +34,11 @@ function PasswordFormValidator() {
       },
     },
   };
+
   function submitHandler(data) {
     console.log(data);
   }
+  
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Password Validation</h1>
