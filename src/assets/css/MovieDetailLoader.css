@@ -1,0 +1,176 @@
+/* Page Background */
+.movie-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Title */
+.page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Button */
+.details-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.details-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Movie Layout */
+.movie-container {
+    max-width: 900px;
+    margin: auto;
+    background: #111827;
+    border-radius: 12px;
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+/* Poster */
+.poster-section img {
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Movie Info */
+.movie-info {
+    text-align: left;
+    flex: 1;
+}
+
+.movie-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #60a5fa;
+}
+
+.movie-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.movie-info span {
+    font-weight: bold;
+    color: #93c5fd;
+}
+
+.loader-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center Loader */
+.loader-wrapper {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loader Base */
+.loader {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+
+/* Loader Animation */
+.loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 48em;
+    height: 48em;
+
+    /* Changed color to match theme */
+    background-image:
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0),
+        radial-gradient(circle 10px, #60a5fa 100%, transparent 0);
+
+    background-position:
+        0em -18em,
+        0em 18em,
+        18em 0em,
+        -18em 0em,
+        13em -13em,
+        -13em -13em,
+        13em 13em,
+        -13em 13em;
+
+    background-repeat: no-repeat;
+    font-size: 0.5px;
+    border-radius: 50%;
+    animation: blast 1s ease-in infinite;
+}
+
+.loader::after {
+    font-size: 1px;
+
+    /* center dot color */
+    background: #3b82f6;
+    animation: bounce 1s ease-in infinite;
+}
+
+/* Animations */
+@keyframes bounce {
+
+    0%,
+    100% {
+        font-size: 0.75px
+    }
+
+    50% {
+        font-size: 1.5px
+    }
+}
+
+@keyframes blast {
+
+    0%,
+    40% {
+        font-size: 0.5px;
+    }
+
+    70% {
+        opacity: 1;
+        font-size: 4px;
+    }
+
+    100% {
+        font-size: 6px;
+        opacity: 0;
+    }
+}

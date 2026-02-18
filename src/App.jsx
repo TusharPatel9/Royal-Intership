@@ -29,6 +29,10 @@ import ApiMain from "./components/Class/api/ApiMain";
 import ApiDemo1 from "./components/Class/api/ApiDemo1";
 import ApiHomeWork1 from "./components/homework/api Hw/ApiHomeWork1";
 import ApiHomeWork2 from "./components/homework/api Hw/ApiHomeWork2";
+import OmdbSearch from "./components/Class/api/OmdbSearch";
+import MovieDetails from "./components/Class/api/MovieDetails";
+import ApiHomeWork3 from "./components/homework/api Hw/ApiHomeWork3";
+import ApiHomeWorkWithPost from "./components/homework/api Hw/ApiHomeWorkWithPost";
 
 function App() {
   return (
@@ -53,14 +57,24 @@ function App() {
         <Route path="/formhw1" element={<FormHW1 />}></Route>
         <Route path="/formdemo2" element={<FormDemo2 />}></Route>
         <Route path="/formclassdemo2" element={<FormClassDemo2 />}></Route>
-        <Route path="/productform" element={<ProductFormValidator/>}></Route>
-        <Route path="/employeeform" element={<EmployeeFormValidation/>}></Route>
+        <Route path="/productform" element={<ProductFormValidator />}></Route>
+        <Route
+          path="/employeeform"
+          element={<EmployeeFormValidation />}
+        ></Route>
         <Route path="/formdemo3" element={<FormDemo3 />}></Route>
-        <Route path="/passwordvalidation" element={<PasswordFormValidator />}></Route>
-        <Route path="/apis" element={<ApiMain/>}/>
-        <Route path="/apidemo1" element={<ApiDemo1/>}/>
-        <Route path="/apihw1" element={<ApiHomeWork1/>}/>
-        <Route path="/apihw2" element={<ApiHomeWork2/>}/>
+        <Route
+          path="/passwordvalidation"
+          element={<PasswordFormValidator />}
+        ></Route>
+        <Route path="/apis" element={<ApiMain />} />
+        <Route path="/apidemo1" element={<ApiDemo1 />} />
+        <Route path="/apihw1" element={<ApiHomeWork1 />} />
+        <Route path="/apihw2" element={<ApiHomeWork2 />} />
+        <Route path="/apihw3" element={<ApiHomeWork3 />} />
+        <Route path="/apihwpost" element={<ApiHomeWorkWithPost />} />
+        <Route path="/omdbapi" element={<OmdbSearch />} />
+        <Route path="/moviedetails/:imdbId" element={<MovieDetails />} />
         <Route path="/*" element={<PageNotFound />}></Route>
       </Routes>
     </div>

@@ -15,6 +15,15 @@ function ApiMain() {
       <h2>
         <Link to="/apihw2">Api Homework 2</Link>
       </h2>
+      <h2>
+        <Link to="/omdbapi">OMDB API</Link>
+      </h2>
+      <h2>
+        <Link to="/apihw3">Api Homework 3</Link>
+      </h2>
+      <h2>
+        <Link to="/apihwpost">Api Homework with post method</Link>
+      </h2>
     </div>
   );
 }
